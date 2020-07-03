@@ -1,0 +1,36 @@
+variables:
+  DOCKER_DRIVER: overlay2
+
+include:
+  - template: Dependency-Scanning.gitlab-ci.yml
+  - template: SAST.gitlab-ci.yml
+  - template: License-Scanning.gitlab-ci.yml
+
+stages:
+  - build
+  - test
+  - release
+
+build:
+  image: python:3.6.5-stretch
+  services:
+    - docker:dind
+  stage: build
+  script:
+    - rm -rf dist
+    - pip install twine wheel
+    - python3 setup.py sdist bdist_wheel
+    - sed -i "s|%USERNAME%|${PYPI_USERNAME}|" .pypirc
+    - sed -i "s|%TOKEN%|${PYPI_TOKEN}|" .pypirc
+    - python3 -m twine upload --config-file .pypirc --repository gitlab dist/*
+
+  # Ensure we only push when a new version is tagged
+  only:
+    - tags
+    - /^v\d+\.\d+\.\d+$$/
+
+test:
+  stage: test
+  script:
+    - pip install tox
+    - tox
