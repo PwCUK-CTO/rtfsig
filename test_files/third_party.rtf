@@ -1,0 +1,996 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033\deflangfe2052{\fonttbl{\f0\fswiss\fprq2\fcharset0 Verdana;}{\f1\fswiss\fprq2\fcharset0 Calibri;}{\f2\fmodern\fprq1\fcharset0 Courier New;}{\f3\fswiss\fprq2\fcharset0 Arial;}{\f4\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red0\green0\blue0;\red13\green13\blue13;\red0\green0\blue255;\red46\green46\blue46;\red51\green51\blue51;\red255\green255\blue255;\red0\green255\blue255;\red231\green231\blue231;}
+{\stylesheet{ Normal;}{\s1 heading 1;}{\s2 heading 2;}{\s3 heading 3;}}
+{\*\generator Riched20 10.0.14393}{\*\mmathPr\mnaryLim0\mdispDef1\mwrapIndent1440 }\viewkind4\uc1 
+\pard\brdrb\brdrs\brdrw15\brsp20 \nowidctlpar\qc\tqc\tx4513\tqr\tx9026\f0\fs18 Intel\'ae Software Guard Extensions \line Third Party Components Attributions\par
+\par
+
+\pard\nowidctlpar\f1\fs20\par
+
+\pard\widctlpar\cf1 The following are licenses for third party software that was used to develop the Intel product, Intel\'ae Software Guard Extensions. These licenses are listed due to attribution requirements in these license agreements. For the avoidance of doubt, Intel\'ae\~Software Guard Extensions is solely governed by the terms and conditions of the End User License Agreement that accompanies Intel\'ae\~Software Guard Extensions and the third party licenses identified in the third_party.rtf that accompanies Intel\'ae Software Guard Extensions.\par
+\cf0\par
+
+\pard\nowidctlpar\ri720\tx916\tx1832\tx2748\tx3664\tx4580\tx5496\tx6412\tx7328\tx8244\tx9160\tx10076\tx10992\tx11908\tx12824\tx13740\tx14656\cf2\par
+
+\pard\nowidctlpar\s2\cf0\f0\fs24 OpenBSD*\par
+
+\pard\nowidctlpar {\f1\fs20\lang1036{\field{\*\fldinst{HYPERLINK http://openbsd.org/ }}{\fldrslt{http://openbsd.org/\ul0\cf0}}}}\cf2\f1\fs20\lang1036\par
+
+\pard\nowidctlpar\s2\cf1\par
+\lang1033 OpenBSD* Copyright Policy\par
+
+\pard\nowidctlpar{\pict{\*\picprop}\wmetafile8\picw1764\pich882\picwgoal1000\pichgoal5 
+010009000003d000000006001c00000000000400000003010800050000000b0200000000050000
+000c023300450f040000002e0118001c000000fb021000070000000000bc020000000001020222
+53797374656d0077902ae528f8992500cc033d7740914077d061be07049a2500040000002d0100
+00040000002d01000004000000020101001c000000fb02a4ff0000000000009001000000000440
+002243616c6962726900000000000000000000000000000000000000000000000000040000002d
+010100040000002d010100040000002d010100050000000902000000020d000000320a56000000
+01000400000000003c0f32002000360005000000090200000002030000001e0007000000fc0200
+00000000000000040000002d01020008000000fa02050000000000ffffff00040000002d010300
+0e00000024030500ffffffffffff32003c0f32003c0fffffffffffff08000000fa020000000000
+0000000000040000002d01040007000000fc020000ffffff000000040000002d01050004000000
+2701ffff040000002d010000040000002d010000030000000000
+}\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent360{\pntxtb\'B7}}\widctlpar\s3\fi-360\li720\sb100\sa100 Goal\par
+
+\pard\widctlpar\li720\sb100\sa100 Copyright law is complex, OpenBSD* policy is simple - OpenBSD strives to maintain the spirit of the original Berkeley Unix copyrights.\par
+OpenBSD can exist as it does today because of the example set by the Computer Systems Research Group at Berkeley and the battles which they and others fought to create a relatively un-encumbered Unix source distribution.\par
+The ability of a\cf0\~\b freely redistributable\b0\~\cf1 "Berkeley" Unix to move forward on a competitive basis with other operating systems depends on the willingness of the various development groups to exchange code amongst themselves and with other projects. Understanding the legal issues surrounding copyright is fundamental to the ability to exchange and re-distribute code, while honoring the spirit of the copyright and concept of attribution is fundamental to promoting the cooperation of the people involved.\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent360{\pntxtb\'B7}}\widctlpar\s3\fi-360\li720\sb100\sa100 The Berkeley* Copyright\par
+
+\pard\widctlpar\li720\sb100\sa100 The Berkeley* copyright poses no restrictions on private or commercial use of the software and imposes only simple and uniform requirements for maintaining copyright notices in redistributed versions and crediting the originator of the material\cf0\~\b only\b0\~\cf1 in advertising.\par
+For instance:\par
+
+\pard\widctlpar\li720\tx916\tx1832\tx2748\tx3664\tx4580\tx5496\tx6412\tx7328\tx8244\tx9160\tx10076\tx10992\tx11908\tx12824\tx13740\tx14656  * Copyright (c) 1982, 1986, 1990, 1991, 1993\par
+ *\tab The Regents of the University of California.  All rights reserved.\par
+ *\par
+ * Redistribution and use in source and binary forms, with or without\par
+ * modification, are permitted provided that the following conditions\par
+ * are met:\par
+ * 1. Redistributions of source code must retain the above copyright\par
+ *    notice, this list of conditions and the following disclaimer.\par
+ * 2. Redistributions in binary form must reproduce the above copyright\par
+ *    notice, this list of conditions and the following disclaimer in the\par
+ *    documentation and/or other materials provided with the distribution.\par
+ * 3. All advertising materials mentioning features or use of this software\par
+ *    must display the following acknowledgement:\par
+ *\tab This product includes software developed by the University of\par
+ *\tab California, Berkeley and its contributors.\par
+ * 4. Neither the name of the University nor the names of its contributors\par
+ *    may be used to endorse or promote products derived from this software\par
+ *    without specific prior written permission.\par
+ *\par
+ * THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND\par
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\par
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\par
+ * ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE\par
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\par
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\par
+ * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\par
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\par
+ * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\par
+ * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\par
+ * SUCH DAMAGE.\par
+ *\par
+
+\pard\widctlpar\li720\sb100\sa100 Berkeley rescinded the 3rd term (the advertising term) on 22 July 1999. Verbatim copies of the Berkeley license in the OpenBSD tree have that term removed. In addition, many 3rd-party BSD-style licenses consist solely of the first two terms.\par
+Because the OpenBSD copyright imposes no conditions beyond those imposed by the Berkeley copyright, OpenBSD can hope to share the same wide distribution and applicability as the Berkeley distributions. It follows however, that OpenBSD cannot include material which includes copyrights which are more restrictive than the Berkeley copyright, or must relegate this material to a secondary status, i.e. OpenBSD as a whole is freely redistributable, but some optional components may not be.\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent360{\pntxtb\'B7}}\widctlpar\s3\fi-360\li720\sb100\sa100 Copyright Law\par
+
+\pard\widctlpar\li720\sb100\sa100 While the overall subject of copyright law is far beyond the scope of this document, some basics are in order. Under the current copyright law, copyrights are implicit in the creation of a new work and reside with the creator, unless otherwise assigned. In general the copyright applies only to the new work, not the material the work was derived from, nor those portions of the derivative material included in the new work.\par
+Copyright law admits to three general categories of works:\par
+
+\pard\nowidctlpar\li720 Original Work\par
+A new work that is not derived from an existing work.\par
+Derivative Work\par
+Work that is derived from, includes or amends existing works.\par
+Compilations\par
+A work that is a compilation of existing new and derivative works.\par
+
+\pard\widctlpar\li720\sb100\sa100 The fundamental concept is that there is primacy of the copyright, that is a copyright of a derivative work does not affect the rights held by the owner of the copyright of the original work, rather only the part added. Likewise the copyright of a compilation does not affect the rights of the owner of the included works, only the compilation as an entity.\par
+It is vitally important to understand that copyrights are broad protections as defined by national and international copyright law. The "copyright notices" usually included in source files are not copyrights, but rather notices that a party asserts that they hold copyright to the material or to part of the material. Typically these notices are associated with license terms which grant permissions subject to copyright law and with disclaimers that state the position of the copyright holder/distributor with respect to liability surrounding use of the material.\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent360{\pntxtb\'B7}}\widctlpar\s3\fi-360\li720\sb100\sa100 Permissions - the flip side\par
+
+\pard\widctlpar\li720\sb100\sa100 Because copyrights arise from the creation of a work, rather than through a registration process, there needs to be a practical way to extend permission to use a work beyond what might be allowed by "fair use" provisions of the copyright laws.\par
+This permission typically takes the form of a "release" or "license" included in the work, which grants the additional uses beyond those granted by copyright law, usually subject to a variety of conditions. At one extreme sits "public domain" where the originator asserts that he imposes no restrictions on use of the material, at the other restrictive clauses that actually grant no additional rights or impose restrictive, discriminatory or impractical conditions on use of the work.\par
+Again, an important point to note is that the release and conditions can only apply to the portion of the work that was originated by the copyright holder - the holder of a copyright on a derivative work can neither grant additional permissions for use of the original work, nor impose more restrictive conditions for use of that work.\par
+Because copyright arises from the creation of a work and not the text or a registration process, removing or altering a copyright notice or associated release terms has no bearing on the existence of the copyright, rather all that is accomplished is to cast doubt upon whatever rights the person making the modifications had to use the material in the first place. Likewise, adding terms and conditions in conflict with the original terms and conditions does not supersede them, rather it casts doubts on the rights of the person making the amendments to use the material and creates confusion as to whether anyone can use the amended version or derivatives thereof.\par
+Finally, releases are generally binding on the material that they are distributed with. This means that if the originator of a work distributes that work with a release granting certain permissions, those permissions apply as stated, without discrimination, to all persons legitimately possessing a copy of the work. That means that having granted a permission, the copyright holder can not retroactively say that an individual or class of individuals are no longer granted those permissions. Likewise should the copyright holder decide to "go commercial" he can not revoke permissions already granted for the use of the work as distributed, though he may impose more restrictive permissions in his future distributions of that work.\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent360{\pntxtb\'B7}}\widctlpar\s3\fi-360\li720\sb100\sa100 Specific Cases\par
+
+\pard\widctlpar\li720\sb100\sa100 This section attempts to summarize the position of OpenBSD relative to some commonly encountered copyrights.\par
+
+\pard\nowidctlpar\li720 Berkeley*\par
+
+\pard\widctlpar\li720\sb100\sa100 The Berkeley copyright is the model for the OpenBSD copyright. It retains the rights of the copyright holder, while imposing minimal conditions on the use of the copyrighted material. Material with Berkeley copyrights, or copyrights closely adhering to the Berkeley model can generally be included in OpenBSD.\par
+
+\pard\nowidctlpar\li720 AT&T*\par
+
+\pard\widctlpar\li720\sb100\sa100 As part of its settlement with AT&T*, Berkeley included an AT&T copyright notice on some of the files in 4.4BSD lite and lite2. The terms of this license are identical to the standard Berkeley license.\par
+Additionally, OpenBSD includes some other AT&T code with non-restrictive copyrights, such as the reference implementation of\cf0\~{\cf1{\field{\*\fldinst{HYPERLINK "http://cm.bell-labs.com/cm/cs/who/bwk/awk.tar.gz" }}{\fldrslt{\ul\cf3 awk}}}}\cf1\f1\fs20 .\par
+
+\pard\nowidctlpar\li720 Caldera*\par
+
+\pard\widctlpar\li720\sb100\sa100 Caldera* (now known as the SCO group) is the current owner of the Unix code copyrights. On 23 January 2002, the original Unix code (versions 1 through seven, including 32V) was freed by Caldera. This code is now available under a\cf0\~{\cf1{\field{\*\fldinst{HYPERLINK "http://www.tuhs.org/Archive/Caldera-license.pdf" }}{\fldrslt{\ul\cf3 4-term BSD-style license}}}}\cf1\f1\fs20 . As a result, it is now possible to incorporate real Unix code into OpenBSD (though this code is quite old and generally requires significant changes to bring it up to date).\par
+
+\pard\nowidctlpar\li720 DEC*, Sun*, other manufacturers/software houses.\par
+
+\pard\widctlpar\li720\sb100\sa100 In general OpenBSD does not include material copyrighted by manufacturers or software houses. Material may be included where the copyright owner has granted general permission for reuse without conditions, with terms similar to the Berkeley copyright, or where the material is the product of an employee and the employer's copyright notice effectively releases any rights they might have to the work.\par
+
+\pard\nowidctlpar\li720 Carnegie-Mellon* (CMU, Mach)\par
+
+\pard\widctlpar\li720\sb100\sa100 The Carnegie-Mellon copyright is similar to the Berkeley copyright, except that it requests that derivative works be made available to Carnegie-Mellon. Because this is only a request and not a condition, such material can still be included in OpenBSD. It should be noted that existing versions of Mach are still subject to AT&T copyrights, which prevents the general distribution of Mach sources.\par
+
+\pard\nowidctlpar\li720 Apache*\par
+
+\pard\widctlpar\li720\sb100\sa100 The original Apache* copyright is similar to the Berkeley copyright, except that it stipulates that products derived from the code may not have "Apache" in their name. The purpose of this clause is to avoid a situation in which another party releases a modified version of the code named in such a way to make users think that it is the "official" version. This is not an issue with OpenBSD because OpenBSD is a\cf0\~\b Compilation\cf1\b0 , and not a\cf0\~\b Derived Work\cf1\b0 . Source code published under version 2 of the Apache license cannot be included into OpenBSD. As a consequence, OpenBSD now maintains its own version of Apache based on version 1.3.29. The OpenBSD version includes many enhancements and bugfixes.\par
+
+\pard\nowidctlpar\li720 ISC*\par
+
+\pard\widctlpar\li720\sb100\sa100 The ISC* copyright is functionally equivalent to a two-term BSD copyright with language removed that is made unnecessary by the Berne convention. This is the preferred license for new code incorporated into OpenBSD. A sample license is included in the source tree as\cf0\~{\cf1{\field{\*\fldinst{HYPERLINK "http://www.openbsd.org/cgi-bin/cvsweb/~checkout~/src/share/misc/license.template?rev=HEAD" }}{\fldrslt{\ul\cf3\fs24 /usr/src/share/misc/license.template}}}}\cf1\f1\fs20 .\par
+
+\pard\nowidctlpar\li720 GNU* General Public License, GPL, LGPL, copyleft, etc.\par
+
+\pard\widctlpar\li720\sb100\sa100 The GNU* Public License and licenses modeled on it impose the restriction that source code must be distributed or made available for all works that are derivatives of the GNU copyrighted code.\par
+While this may be a noble strategy in terms of software sharing, it is a condition that is typically unacceptable for commercial use of software. As a consequence, software bound by the GPL terms can not be included in the kernel or "runtime" of OpenBSD, though software subject to GPL terms may be included as development tools or as part of the system that are "optional" as long as such use does not result in OpenBSD as a whole becoming subject to the GPL terms.\par
+As an example, GCC and other GNU tools are included in the OpenBSD tool chain. However, it is quite possible to distribute a system for many applications without a tool chain, or the distributor can choose to include a tool chain as an optional bundle which conforms to the GPL terms.\par
+
+\pard\nowidctlpar\li720 NetBSD*\par
+
+\pard\widctlpar\li720\sb100\sa100 Much of OpenBSD is originally based on and evolved from NetBSD*, since some of the OpenBSD developers were involved in the NetBSD project. The general NetBSD license terms are compatible with the Berkeley license and permit such use. Material subject\cf0\~\b only\b0\~\cf1 to the general NetBSD license can generally be included in OpenBSD.\par
+In the past, NetBSD has included material copyrighted by individuals who have imposed license conditions beyond that of the general NetBSD license, but granted the NetBSD Foundation license to distribute the material. Such material can not be included in OpenBSD as long as the conditions imposed are at odds with the OpenBSD license terms or releases from those terms are offered on a discriminatory basis.\par
+
+\pard\nowidctlpar\li720 FreeBSD*\par
+
+\pard\widctlpar\li720\sb100\sa100 Most of FreeBSD* is also based on Berkeley licensed material or includes copyright notices based on the Berkeley model. Such material can be included in OpenBSD, while those parts that are subject to GPL or various individual copyright terms that are at odds with the OpenBSD license can not be included in OpenBSD.\par
+
+\pard\nowidctlpar\li720 Linux*\par
+
+\pard\widctlpar\li720\sb100\sa100 Most of Linux* is subject to GPL style licensing terms and therefore can not be included in OpenBSD. Individual components may be eligible, subject to the terms of the originator's copyright notices. Note that Linux "distributions" may also be subject to additional copyright claims of the distributing organization, either as a compilation or on material included that is not part of the Linux core.\par
+
+\pard\nowidctlpar\li720 X*, XFree86*, X.Org*\par
+
+\pard\widctlpar\li720\sb100\sa100 X*, X.Org* or XFree86* are not parts of OpenBSD, rather X.Org and parts of XFree86 3.3.6 are distributed with many OpenBSD ports as a convenience to the user, subject to applicable license terms.\par
+
+\pard\nowidctlpar\li720 Shareware, Charityware, Freeware, etc.\par
+
+\pard\widctlpar\li720\sb100\sa100 Most "shareware" copyright notices impose conditions for redistribution, use or visibility that are at conflict with the OpenBSD project goals. Review on a case-by-case basis is required as to whether the wording of the conditions is acceptable in terms of conditions being requested vs. demanded and whether the spirit of the conditions is compatible with goals of the OpenBSD project.\par
+
+\pard\nowidctlpar\li720 Public Domain\par
+
+\pard\widctlpar\li720\sb100\sa100 While material that is truly entered into the "Public Domain" can be included in OpenBSD, review is required on a case by case basis. Frequently the "public domain" assertion is made by someone who does not really hold all rights under Copyright law to grant that status or there are a variety of conditions imposed on use. For a work to be truly in the "Public Domain" all rights are abandoned and the material is offered without restrictions.\par
+
+\pard\nowidctlpar\li567\cf2\par
+
+\pard\nowidctlpar\sa100\b\par
+
+\pard\nowidctlpar\s2\fs24 FreeBSD*\par
+
+\pard\widctlpar {\cf0\b0\fs20{\field{\*\fldinst{HYPERLINK http://www.freebsd.org/ }}{\fldrslt{http://www.freebsd.org/\ul0\cf0}}}}\ul\b0\f1\fs20\par
+
+\pard\cbpat6\nowidctlpar\sl360\slmult0\ulnone\b\par
+
+\pard\cbpat6\nowidctlpar\s1\sa288\b0 The FreeBSD* Copyright\par
+
+\pard\cbpat6\widctlpar\sb288\sa288\sl288\slmult0 Copyright 1992-2013 The FreeBSD Project. All rights reserved.\par
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\par
+
+\pard\cbpat6 
+{\pntext\f1 1.\tab}{\*\pn\pnlvlbody\pnf1\pnindent360\pnstart1\pndec{\pntxta.}}
+\widctlpar\fi-360\li720\sb48\sa24\sl288\slmult0 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\par
+{\pntext\f1 2.\tab}Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\par
+
+\pard\cbpat6\widctlpar\sb288\sa288\sl288\slmult0 THIS SOFTWARE IS PROVIDED BY THE FREEBSD PROJECT ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE FREEBSD PROJECT OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\par
+The views and conclusions contained in the software and documentation are those of the authors and should not be interpreted as representing official policies, either expressed or implied, of the FreeBSD Project.\par
+
+\pard\cbpat6\nowidctlpar\sl360\slmult0\b\par
+\fs24\par
+NetBSD*\fs20\par
+{\b0{\field{\*\fldinst{HYPERLINK http://www.netbsd.org/ }}{\fldrslt{http://www.netbsd.org/\ul0\cf0}}}}\b0\f1\fs20\par
+\par
+/*-\par
+ * Copyright (c) 2008 The NetBSD Foundation, Inc.\par
+ * All rights reserved.\par
+ *\par
+ * This code is derived from software contributed to The NetBSD Foundation\par
+ * by \par
+ *\par
+ * Redistribution and use in source and binary forms, with or without\par
+ * modification, are permitted provided that the following conditions\par
+ * are met:\par
+ * 1. Redistributions of source code must retain the above copyright\par
+ *    notice, this list of conditions and the following disclaimer.\par
+ * 2. Redistributions in binary form must reproduce the above copyright\par
+ *    notice, this list of conditions and the following disclaimer in the\par
+ *    documentation and/or other materials provided with the distribution.\par
+ *\par
+ * THIS SOFTWARE IS PROVIDED BY THE NETBSD FOUNDATION, INC. AND CONTRIBUTORS\par
+ * ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED\par
+ * TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\par
+ * PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR CONTRIBUTORS\par
+ * BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\par
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\par
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\par
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\par
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\par
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE\par
+ * POSSIBILITY OF SUCH DAMAGE.\par
+ */\par
+________________________________________\par
+For complete copyright and licensing terms, see: {{\field{\*\fldinst{HYPERLINK http://www.netbsd.org/about/redistribution.html }}{\fldrslt{http://www.netbsd.org/about/redistribution.html\ul0\cf0}}}}\f1\fs20\par
+\b\par
+\par
+
+\pard\nowidctlpar\s1\fs24 SQLite*\par
+
+\pard\nowidctlpar\b0\fs20\par
+{\cf0{\field{\*\fldinst{HYPERLINK http://sqlite.org/ }}{\fldrslt{http://sqlite.org/\ul0\cf0}}}}\f1\fs20\par
+\par
+
+\pard\nowidctlpar\s2 SQLite* Copyright\par
+
+\pard\nowidctlpar\cf0\f0\fs24\par
+
+\pard\widctlpar\sb100\sa100\cf2\f1\fs20 All of the code and documentation in SQLite has been dedicated to the\~{{\field{\*\fldinst{HYPERLINK "http://en.wikipedia.org/wiki/Public_Domain" }}{\fldrslt{\ul\cf3 public domain}}}}\f1\fs20\~by the authors. All code authors, and representatives of the companies they work for, have signed affidavits dedicating their contributions to the public domain and originals of those signed affidavits are stored in a firesafe at the main offices of\~{{\field{\*\fldinst{HYPERLINK "http://www.hwaci.com/" }}{\fldrslt{\ul\cf3 Hwaci}}}}\f1\fs20 . Anyone is free to copy, modify, publish, use, compile, sell, or distribute the original SQLite code, either in source code form or as a compiled binary, for any purpose, commercial or non-commercial, and by any means.\par
+The previous paragraph applies to the deliverable code and documentation in SQLite - those parts of the SQLite library that you actually bundle and ship with a larger application. Some scripts used as part of the build process (for example the "configure" scripts generated by autoconf) might fall under other open-source licenses. Nothing from these build scripts ever reaches the final deliverable SQLite library, however, and so the licenses associated with those scripts should not be a factor in assessing your rights to copy and use the SQLite library.\par
+All of the deliverable code in SQLite has been written from scratch. No code has been taken from other projects or from the open internet. Every line of code can be traced back to its original author, and all of those authors have public domain dedications on file. So the SQLite code base is clean and is uncontaminated with licensed code from other projects.\par
+
+\pard\widctlpar\par
+
+\pard\nowidctlpar\par
+\par
+
+\pard\nowidctlpar\s3\b\fs22 Dlmalloc*\par
+
+\pard\nowidctlpar\b0\fs20 Public domain\par
+{\cf0{\field{\*\fldinst{HYPERLINK http://g.oswego.edu/dl/html/malloc.html }}{\fldrslt{http://g.oswego.edu/dl/html/malloc.html\ul0\cf0}}}}\f1\fs20\par
+\par
+
+\pard\nowidctlpar\s2\qc CC0 1.0 Universal\par
+
+\pard\cbpat6\nowidctlpar\sl240\slmult0\par
+
+\pard\nowidctlpar\sl240\slmult0 CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE LEGAL SERVICES. DISTRIBUTION OF THIS DOCUMENT DOES NOT CREATE AN ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS INFORMATION ON AN "AS-IS" BASIS. CREATIVE COMMONS MAKES NO WARRANTIES REGARDING THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED HEREUNDER, AND DISCLAIMS LIABILITY FOR DAMAGES RESULTING FROM THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED HEREUNDER.\par
+
+\pard\cbpat6\nowidctlpar\s3\sb420\sa300\sl240\slmult0\i Statement of Purpose\i0\par
+
+\pard\cbpat6\widctlpar\sb100\sa100\sl240\slmult0 The laws of most jurisdictions throughout the world automatically confer exclusive Copyright and Related Rights (defined below) upon the creator and subsequent owner(s) (each and all, an "owner") of an original work of authorship and/or a database (each, a "Work").\par
+Certain owners wish to permanently relinquish those rights to a Work for the purpose of contributing to a commons of creative, cultural and scientific works ("Commons") that the public can reliably and without fear of later claims of infringement build upon, modify, incorporate in other works, reuse and redistribute as freely as possible in any form whatsoever and for any purposes, including without limitation commercial purposes. These owners may contribute to the Commons to promote the ideal of a free culture and the further production of creative, cultural and scientific works, or to gain reputation or greater distribution for their Work in part through the use and efforts of others.\par
+For these and/or other purposes and motivations, and without any expectation of additional consideration or compensation, the person associating CC0 with a Work (the "Affirmer"), to the extent that he or she is an owner of Copyright and Related Rights in the Work, voluntarily elects to apply CC0 to the Work and publicly distribute the Work under its terms, with knowledge of his or her Copyright and Related Rights in the Work and the meaning and intended legal effect of CC0 on those rights.\par
+\b\fs24 1. Copyright and Related Rights.\b0\~\fs20 A Work made available under CC0 may be protected by copyright and related or neighboring rights ("Copyright and Related Rights"). Copyright and Related Rights include, but are not limited to, the following:\par
+
+\pard\cbpat6 
+{\pntext\f1 i.\tab}{\*\pn\pnlvlbody\pnf1\pnindent360\pnstart1\pnqr\pnlcrm{\pntxta.}}
+\widctlpar\fi-360\li720\sb100\sa120\sl240\slmult0 the right to reproduce, adapt, distribute, perform, display, communicate, and translate a Work;\par
+{\pntext\f1 ii.\tab}moral rights retained by the original author(s) and/or performer(s);\par
+{\pntext\f1 iii.\tab}publicity and privacy rights pertaining to a person's image or likeness depicted in a Work;\par
+{\pntext\f1 iv.\tab}rights protecting against unfair competition in regards to a Work, subject to the limitations in paragraph 4(a), below;\par
+{\pntext\f1 v.\tab}rights protecting the extraction, dissemination, use and reuse of data in a Work;\par
+{\pntext\f1 vi.\tab}database rights (such as those arising under Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, and under any national implementation thereof, including any amended or successor version of such directive); and\par
+{\pntext\f1 vii.\tab}other similar, equivalent or corresponding rights throughout the world based on applicable law or treaty, and any national implementations thereof.\par
+
+\pard\cbpat6\widctlpar\sb100\sa100\sl240\slmult0\b\fs24 2. Waiver.\b0\~\fs20 To the greatest extent permitted by, but not in contravention of, applicable law, Affirmer hereby overtly, fully, permanently, irrevocably and unconditionally waives, abandons, and surrenders all of Affirmer's Copyright and Related Rights and associated claims and causes of action, whether now known or unknown (including existing as well as future claims and causes of action), in the Work (i) in all territories worldwide, (ii) for the maximum duration provided by applicable law or treaty (including future time extensions), (iii) in any current or future medium and for any number of copies, and (iv) for any purpose whatsoever, including without limitation commercial, advertising or promotional purposes (the "Waiver"). Affirmer makes the Waiver for the benefit of each member of the public at large and to the detriment of Affirmer's heirs and successors, fully intending that such Waiver shall not be subject to revocation, rescission, cancellation, termination, or any other legal or equitable action to disrupt the quiet enjoyment of the Work by the public as contemplated by Affirmer's express Statement of Purpose.\par
+\b\fs24 3. Public License Fallback.\b0\~\fs20 Should any part of the Waiver for any reason be judged legally invalid or ineffective under applicable law, then the Waiver shall be preserved to the maximum extent permitted taking into account Affirmer's express Statement of Purpose. In addition, to the extent the Waiver is so judged Affirmer hereby grants to each affected person a royalty-free, non transferable, non sublicensable, non exclusive, irrevocable and unconditional license to exercise Affirmer's Copyright and Related Rights in the Work (i) in all territories worldwide, (ii) for the maximum duration provided by applicable law or treaty (including future time extensions), (iii) in any current or future medium and for any number of copies, and (iv) for any purpose whatsoever, including without limitation commercial, advertising or promotional purposes (the "License"). The License shall be deemed effective as of the date CC0 was applied by Affirmer to the Work. Should any part of the License for any reason be judged legally invalid or ineffective under applicable law, such partial invalidity or ineffectiveness shall not invalidate the remainder of the License, and in such case Affirmer hereby affirms that he or she will not (i) exercise any of his or her remaining Copyright and Related Rights in the Work or (ii) assert any associated claims and causes of action with respect to the Work, in either case contrary to Affirmer's express Statement of Purpose.\par
+\b\fs24 4. Limitations and Disclaimers.\b0\fs20\par
+
+\pard\cbpat6 
+{\pntext\f1 a.\tab}{\*\pn\pnlvlbody\pnf1\pnindent360\pnstart1\pnlcltr{\pntxta.}}
+\widctlpar\fi-360\li720\sb100\sa120\sl240\slmult0 No trademark or patent rights held by Affirmer are waived, abandoned, surrendered, licensed or otherwise affected by this document.\par
+{\pntext\f1 b.\tab}Affirmer offers the Work as-is and makes no representations or warranties of any kind concerning the Work, express, implied, statutory or otherwise, including without limitation warranties of title, merchantability, fitness for a particular purpose, non infringement, or the absence of latent or other defects, accuracy, or the present or absence of errors, whether or not discoverable, all to the greatest extent permissible under applicable law.\par
+{\pntext\f1 c.\tab}Affirmer disclaims responsibility for clearing rights of other persons that may apply to the Work or any use thereof, including without limitation any person's Copyright and Related Rights in the Work. Further, Affirmer disclaims responsibility for obtaining any necessary consents, permissions or other rights required for any use of the Work.\par
+{\pntext\f1 d.\tab}Affirmer understands and acknowledges that Creative Commons is not a party to this document and has no duty or obligation with respect to this CC0 or use of the Work.\par
+
+\pard\nowidctlpar\par
+\par
+\par
+
+\pard\nowidctlpar\s3\b\fs22 STLPort*\par
+
+\pard\cbpat6\nowidctlpar\sl360\slmult0 {\cf0\kerning3\b0\fs20{\field{\*\fldinst{HYPERLINK http://stlport.org/ }}{\fldrslt{http://stlport.org/\ul0\cf0}}}}\kerning3\b0\f1\fs20\par
+
+\pard\nowidctlpar\kerning0\b\par
+
+\pard\widctlpar\kerning3\b0 License Agreement\par
+
+\pard\cbpat6\widctlpar\sb100\sa100 Boris Fomitchev\~grants\~Licensee\~a non-exclusive, non-transferable, royalty-free license to use\~STLport* and its documentation without fee.\line\line By downloading, using, or copying\~STLport\~or any portion thereof,\~\~Licensee\~agrees to abide by the intellectual property laws and all other applicable laws of the United States of America, and to all of the terms and conditions of this Agreement.\line\line Licensee\~shall maintain the following copyright and permission\~ notices on\~STLport\~sources and its documentation unchanged :\par
+
+\pard\widctlpar Copyright 1999,2000 Boris Fomitchev\line\line This material is provided "as is", with absolutely no warranty expressed or implied. Any use is at your own risk.\line Permission to use or copy this software for any purpose is hereby granted without fee, provided the above notices are retained on all copies. Permission to modify the code and to distribute modified code is granted, provided the above notices are retained, and a notice that the code was modified is included with the above copyright notice.\par
+
+\pard\cbpat6\widctlpar\sb100\sa100 The\~Licensee\~may distribute binaries compiled with\~STLport\~(whether original or modified) without any royalties or restrictions.\par
+The\~Licensee\~may distribute original or modified\~STLport\~sources, provided that:\par
+
+\pard\cbpat6{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sb100\sa100 The conditions indicated in the above permission notice are met;\par
+{\pntext\f4\'B7\tab}The following copyright notices are retained when present, and conditions provided in accompanying permission notices are met :\par
+
+\pard\cbpat6\widctlpar\sb100\sa100 Copyright 1994 Hewlett-Packard Company\par
+Copyright 1996,97 Silicon Graphics Computer Systems, Inc.\par
+Copyright 1997 Moscow Center for SPARC Technology.\par
+
+\pard\cbpat6\widctlpar\sa100 Permission to use, copy, modify, distribute and sell this software and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation. Hewlett-Packard Company makes no representations about the suitability of this software for any purpose. It is provided "as is" without express or implied warranty.\par
+
+\pard\cbpat6\widctlpar\sb100 Permission to use, copy, modify, distribute and sell this software and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation. Silicon Graphics makes no representations about the suitability of this software for any purpose. It is provided "as is" without express or implied warranty.\par
+
+\pard\cbpat6\widctlpar Permission to use, copy, modify, distribute and sell this software and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation. Moscow Center for SPARC Technology\~ makes no representations about the suitability of this software for any purpose. It is provided "as is" without express or implied warranty.\par
+\par
+\par
+\par
+\b TinyXML* 2\par
+{\b0{\field{\*\fldinst{HYPERLINK https://github.com/leethomason/tinyxml2 }}{\fldrslt{https://github.com/leethomason/tinyxml2\ul0\cf0}}}}\b0\f1\fs20\par
+
+\pard\nowidctlpar\kerning0\b\par
+\b0\par
+
+\pard\cbpat6\nowidctlpar\s1\sl360\slmult0\kerning3 The zlib/libpng License\par
+
+\pard\cbpat6\widctlpar\sb144\sa288\sl300\slmult0 This software is provided 'as-is', without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.\par
+Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:\par
+1. The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software in a product, an acknowledgment in the product documentation would be appreciated but is not required.\par
+2. Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.\par
+3. This notice may not be removed or altered from any source distribution.\par
+
+\pard\nowidctlpar\kerning0\par
+\b\par
+OpenSSL*\par
+\kerning3\b0\par
+{\cf0{\field{\*\fldinst{HYPERLINK http://www.openssl.org/ }}{\fldrslt{http://www.openssl.org/\ul0\cf0}}}}\f1\fs20\par
+\par
+
+\pard\widctlpar   LICENSE ISSUES\par
+  ==============\par
+\par
+  The OpenSSL* toolkit stays under a dual license, i.e. both the conditions of\par
+  the OpenSSL License and the original SSLeay license apply to the toolkit.\par
+  See below for the actual license texts. Actually both licenses are BSD-style\par
+  Open Source licenses. In case of any license issues related to OpenSSL\par
+  please contact openssl-core@openssl.org.\par
+\par
+  OpenSSL License\par
+  ---------------\par
+\par
+/* ====================================================================\par
+ * Copyright (c) 1998-2011 The OpenSSL Project.  All rights reserved.\par
+ *\par
+ * Redistribution and use in source and binary forms, with or without\par
+ * modification, are permitted provided that the following conditions\par
+ * are met:\par
+ *\par
+ * 1. Redistributions of source code must retain the above copyright\par
+ *    notice, this list of conditions and the following disclaimer. \par
+ *\par
+ * 2. Redistributions in binary form must reproduce the above copyright\par
+ *    notice, this list of conditions and the following disclaimer in\par
+ *    the documentation and/or other materials provided with the\par
+ *    distribution.\par
+ *\par
+ * 3. All advertising materials mentioning features or use of this\par
+ *    software must display the following acknowledgment:\par
+ *    "This product includes software developed by the OpenSSL Project\par
+ *    for use in the OpenSSL Toolkit. ({{\field{\*\fldinst{HYPERLINK http://www.openssl.org/ }}{\fldrslt{http://www.openssl.org/\ul0\cf0}}}}\f1\fs20 )"\par
+ *\par
+ * 4. The names "OpenSSL Toolkit" and "OpenSSL Project" must not be used to\par
+ *    endorse or promote products derived from this software without\par
+ *    prior written permission. For written permission, please contact\par
+ *    openssl-core@openssl.org.\par
+ *\par
+ * 5. Products derived from this software may not be called "OpenSSL"\par
+ *    nor may "OpenSSL" appear in their names without prior written\par
+ *    permission of the OpenSSL Project.\par
+ *\par
+ * 6. Redistributions of any form whatsoever must retain the following\par
+ *    acknowledgment:\par
+ *    "This product includes software developed by the OpenSSL Project\par
+ *    for use in the OpenSSL Toolkit ({{\field{\*\fldinst{HYPERLINK http://www.openssl.org/ }}{\fldrslt{http://www.openssl.org/\ul0\cf0}}}}\f1\fs20 )"\par
+ *\par
+ * THIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS'' AND ANY\par
+ * EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\par
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\par
+ * PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR\par
+ * ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\par
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\par
+ * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\par
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\par
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,\par
+ * STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\par
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED\par
+ * OF THE POSSIBILITY OF SUCH DAMAGE.\par
+ * ====================================================================\par
+ *\par
+ * This product includes cryptographic software written by Eric Young\par
+ * (eay@cryptsoft.com).  This product includes software written by Tim\par
+ * Hudson (tjh@cryptsoft.com).\par
+ *\par
+ */\par
+\par
+ Original SSLeay* License\par
+ -----------------------\par
+\par
+/* Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)\par
+ * All rights reserved.\par
+ *\par
+ * This package is an SSL implementation written\par
+ * by Eric Young (eay@cryptsoft.com).\par
+ * The implementation was written so as to conform with Netscapes SSL.\par
+ * \par
+ * This library is free for commercial and non-commercial use as long as\par
+ * the following conditions are aheared to.  The following conditions\par
+ * apply to all code found in this distribution, be it the RC4, RSA,\par
+ * lhash, DES, etc., code; not just the SSL code.  The SSL documentation\par
+ * included with this distribution is covered by the same copyright terms\par
+ * except that the holder is Tim Hudson (tjh@cryptsoft.com).\par
+ * \par
+ * Copyright remains Eric Young's, and as such any Copyright notices in\par
+ * the code are not to be removed.\par
+ * If this package is used in a product, Eric Young should be given attribution\par
+ * as the author of the parts of the library used.\par
+ * This can be in the form of a textual message at program startup or\par
+ * in documentation (online or textual) provided with the package.\par
+ * \par
+ * Redistribution and use in source and binary forms, with or without\par
+ * modification, are permitted provided that the following conditions\par
+ * are met:\par
+ * 1. Redistributions of source code must retain the copyright\par
+ *    notice, this list of conditions and the following disclaimer.\par
+ * 2. Redistributions in binary form must reproduce the above copyright\par
+ *    notice, this list of conditions and the following disclaimer in the\par
+ *    documentation and/or other materials provided with the distribution.\par
+ * 3. All advertising materials mentioning features or use of this software\par
+ *    must display the following acknowledgement:\par
+ *    "This product includes cryptographic software written by\par
+ *     Eric Young (eay@cryptsoft.com)"\par
+ *    The word 'cryptographic' can be left out if the rouines from the library\par
+ *    being used are not cryptographic related :-).\par
+ * 4. If you include any Windows specific code (or a derivative thereof) from \par
+ *    the apps directory (application code) you must include an acknowledgement:\par
+ *    "This product includes software written by Tim Hudson (tjh@cryptsoft.com)"\par
+ * \par
+ * THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS'' AND\par
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\par
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\par
+ * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\par
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\par
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\par
+ * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\par
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\par
+ * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\par
+ * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\par
+ * SUCH DAMAGE.\par
+ * \par
+ * The licence and distribution terms for any publically available version or\par
+ * derivative of this code cannot be changed.  i.e. this code cannot simply be\par
+ * copied and put under another distribution licence\par
+ * [including the GNU Public Licence.]\par
+ */\par
+
+\pard\nowidctlpar\par
+\kerning0\par
+\par
+\b F# PowerPack*\par
+{\cf0\kerning3\b0{\field{\*\fldinst{HYPERLINK http://fsharppowerpack.codeplex.com/ }}{\fldrslt{http://fsharppowerpack.codeplex.com/\ul0\cf0}}}}\kerning3\b0\f1\fs20\par
+
+\pard\nowidctlpar\s1\sb300\sa150 Apache* License 2.0 (Apache*)\par
+
+\pard\widctlpar\sa300\sl285\slmult0\qj Apache License\line Version 2.0, January 2004\line {{\field{\*\fldinst{HYPERLINK http://www.apache.org/licenses/ }}{\fldrslt{http://www.apache.org/licenses/\ul0\cf0}}}}\f1\fs20\line\line TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\line\line 1. Definitions.\line\line "License" shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9 of this document.\line\line "Licensor" shall mean the copyright owner or entity authorized by the copyright owner that is granting the License.\line\line "Legal Entity" shall mean the union of the acting entity and all other entities that control, are controlled by, or are under common control with that entity. For the purposes of this definition, "control" means (i) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (ii) ownership of fifty percent (50%) or more of the outstanding shares, or (iii) beneficial ownership of such entity.\line\line "You" (or "Your") shall mean an individual or Legal Entity exercising permissions granted by this License.\line\line "Source" form shall mean the preferred form for making modifications, including but not limited to software source code, documentation source, and configuration files.\line\line "Object" form shall mean any form resulting from mechanical transformation or translation of a Source form, including but not limited to compiled object code, generated documentation, and conversions to other media types.\line\line "Work" shall mean the work of authorship, whether in Source or Object form, made available under the License, as indicated by a copyright notice that is included in or attached to the work (an example is provided in the Appendix below).\line\line "Derivative Works" shall mean any work, whether in Source or Object form, that is based on (or derived from) the Work and for which the editorial revisions, annotations, elaborations, or other modifications represent, as a whole, an original work of authorship. For the purposes of this License, Derivative Works shall not include works that remain separable from, or merely link (or bind by name) to the interfaces of, the Work and Derivative Works thereof.\line\line "Contribution" shall mean any work of authorship, including the original version of the Work and any modifications or additions to that Work or Derivative Works thereof, that is intentionally submitted to Licensor for inclusion in the Work by the copyright owner or by an individual or Legal Entity authorized to submit on behalf of the copyright owner. For the purposes of this definition, "submitted" means any form of electronic, verbal, or written communication sent to the Licensor or its representatives, including but not limited to communication on electronic mailing lists, source code control systems, and issue tracking systems that are managed by, or on behalf of, the Licensor for the purpose of discussing and improving the Work, but excluding communication that is conspicuously marked or otherwise designated in writing by the copyright owner as "Not a Contribution."\line\line "Contributor" shall mean Licensor and any individual or Legal Entity on behalf of whom a Contribution has been received by Licensor and subsequently incorporated within the Work.\line\line 2. Grant of Copyright License.\line\line Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works in Source or Object form.\line\line 3. Grant of Patent License.\line\line Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as stated in this section) patent license to make, have made, use, offer to sell, sell, import, and otherwise transfer the Work, where such license applies only to those patent claims licensable by such Contributor that are necessarily infringed by their Contribution(s) alone or by combination of their Contribution(s) with the Work to which such Contribution(s) was submitted. If You institute patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Work or a Contribution incorporated within the Work constitutes direct or contributory patent infringement, then any patent licenses granted to You under this License for that Work shall terminate as of the date such litigation is filed.\line\line 4. Redistribution.\line\line You may reproduce and distribute copies of the Work or Derivative Works thereof in any medium, with or without modifications, and in Source or Object form, provided that You meet the following conditions:\line\line 1. You must give any other recipients of the Work or Derivative Works a copy of this License; and\line\line 2. You must cause any modified files to carry prominent notices stating that You changed the files; and\line\line 3. You must retain, in the Source form of any Derivative Works that You distribute, all copyright, patent, trademark, and attribution notices from the Source form of the Work, excluding those notices that do not pertain to any part of the Derivative Works; and\line\line 4. If the Work includes a "NOTICE" text file as part of its distribution, then any Derivative Works that You distribute must include a readable copy of the attribution notices contained within such NOTICE file, excluding those notices that do not pertain to any part of the Derivative Works, in at least one of the following places: within a NOTICE text file distributed as part of the Derivative Works; within the Source form or documentation, if provided along with the Derivative Works; or, within a display generated by the Derivative Works, if and wherever such third-party notices normally appear. The contents of the NOTICE file are for informational purposes only and do not modify the License. You may add Your own attribution notices within Derivative Works that You distribute, alongside or as an addendum to the NOTICE text from the Work, provided that such additional attribution notices cannot be construed as modifying the License.\line\line You may add Your own copyright statement to Your modifications and may provide additional or different license terms and conditions for use, reproduction, or distribution of Your modifications, or for any such Derivative Works as a whole, provided Your use, reproduction, and distribution of the Work otherwise complies with the conditions stated in this License.\line\line 5. Submission of Contributions.\line\line Unless You explicitly state otherwise, any Contribution intentionally submitted for inclusion in the Work by You to the Licensor shall be under the terms and conditions of this License, without any additional terms or conditions. Notwithstanding the above, nothing herein shall supersede or modify the terms of any separate license agreement you may have executed with Licensor regarding such Contributions.\line\line 6. Trademarks.\line\line This License does not grant permission to use the trade names, trademarks, service marks, or product names of the Licensor, except as required for reasonable and customary use in describing the origin of the Work and reproducing the content of the NOTICE file.\line\line 7. Disclaimer of Warranty.\line\line Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its Contributions) on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are solely responsible for determining the appropriateness of using or redistributing the Work and assume any risks associated with Your exercise of permissions under this License.\line\line 8. Limitation of Liability.\line\line In no event and under no legal theory, whether in tort (including negligence), contract, or otherwise, unless required by applicable law (such as deliberate and grossly negligent acts) or agreed to in writing, shall any Contributor be liable to You for damages, including any direct, indirect, special, incidental, or consequential damages of any character arising as a result of this License or out of the use or inability to use the Work (including but not limited to damages for loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses), even if such Contributor has been advised of the possibility of such damages.\line\line 9. Accepting Warranty or Additional Liability.\line\line While redistributing the Work or Derivative Works thereof, You may choose to offer, and charge a fee for, acceptance of support, warranty, indemnity, or other liability obligations and/or rights consistent with this License. However, in accepting such obligations, You may act only on Your own behalf and on Your sole responsibility, not on behalf of any other Contributor, and only if You agree to indemnify, defend, and hold each Contributor harmless for any liability incurred by, or claims asserted against, such Contributor by reason of your accepting any such warranty or additional liability.\par
+\par
+\par
+\b\par
+\fs24 Pintool* \par
+{\cf0\b0\fs20{\field{\*\fldinst{HYPERLINK http://software.intel.com/sites/landingpage/pintool/downloads/pin-2.11-49306-msvc10-ia32_intel64-windows.zip }}{\fldrslt{http://software.intel.com/sites/landingpage/pintool/downloads/pin-2.11-49306-msvc10-ia32_intel64-windows.zip\ul0\cf0}}}}\b0\f1\fs20\par
+
+\pard\widctlpar\sl270\slmult0\tx916\tx1832\tx2748\tx3664\tx4580\tx5496\tx6412\tx7328\tx8244\tx9160\tx10076\tx10992\tx11908\tx12824\tx13740\tx14656\i Intel Pre-Release License Agreement for Pre-Release Software\par
+\i0\par
+IMPORTANT - READ BEFORE COPYING, INSTALLING OR USING.\par
+\par
+Do not copy, install, or use the "Materials" provided under this\par
+license agreement ("Agreement"), until you have carefully read the\par
+following terms and conditions. By copying, installing, or otherwise\par
+using the Materials, you agree to be bound by the terms of this\par
+Agreement.  If you do not agree to the terms of this Agreement, do not\par
+copy, install, or use the Materials.\par
+\par
+Pre-Release License Agreement for Pre-Release Software\par
+\par
+1. PRE-RELEASE:  The Materials are pre-release code, which may not be\par
+fully functional and which Intel may substantially modify in producing\par
+any final version.  Intel can provide no assurance that it will ever\par
+produce or make generally available a final version.\par
+\par
+2. LICENSE DEFINITIONS:\par
+\par
+A. "Materials" are defined as the software, documentation, license key\par
+codes and other materials, including any updates and upgrade thereto,\par
+for the applicable pre-release software (which may be found at\par
+{{\field{\*\fldinst{HYPERLINK http://whatif.intel.com/ }}{\fldrslt{http://whatif.intel.com/\ul0\cf0}}}}\f1\fs20 ), that are provided to you under this\par
+Agreement.\par
+\par
+3. LICENSE GRANT:\par
+\par
+A. Subject to all of the terms and conditions of this Agreement, Intel\par
+Corporation ("Intel") grants to you a non-exclusive, non-assignable\par
+copyright license to make only the minimum number of copies of the\par
+Materials reasonably necessary for your internal testing and\par
+development of your products.\par
+\par
+B. Subject to all of the terms and conditions of this Agreement, Intel\par
+grants to you a non-exclusive, non-assignable copyright license to\par
+modify the Materials that are provided in source code (human readable)\par
+form.\par
+\par
+C. If the Materials include the file named \ldblquote redist.txt\rdblquote , then subject to\par
+all of the terms and conditions of this Agreement and any specific\par
+restrictions which may appear in the \ldblquote redist.txt\rdblquote  file, Intel grants to\par
+you a non-exclusive, non-assignable copyright license to redistribute\par
+the files (unmodified or modified by you) listed in the \ldblquote redist.txt\rdblquote\par
+file only as part of the application you develop with the Materials.\par
+\par
+4. LICENSE RESTRICTIONS:\par
+\par
+A. You may not reverse-assemble, reverse-compile, or otherwise reverse-engineer any software provided solely in binary form.\par
+\par
+B. You may not distribute any portion of Materials, whether in source or binary form, to any third party, except as specified in this Agreement.\par
+\par
+5. COPYRIGHT: Title to the Materials and all copies thereof remain\par
+with Intel or its suppliers.  The Materials are copyrighted and are\par
+protected by United States copyright laws and international treaty\par
+provisions.  You will not remove any copyright notice from the\par
+Materials.  You agree to prevent any unauthorized copying of the\par
+Materials.  Except as expressly provided herein, Intel does not grant\par
+any express or implied right to you under Intel patents, copyrights,\par
+trademarks, or trade secret information.  Subject to Intel\rquote s ownership\par
+of the Materials, all right, title and interest in and to your\par
+modifications shall belong to you.\par
+\par
+6. REPLACEMENTS: The Materials are provided "AS IS" without warranty\par
+of any kind.  If the media on which the Materials are furnished are\par
+found to be defective in material or workmanship under normal use for\par
+a period of ninety (90) days from the date of receipt, Intel's entire\par
+liability and your exclusive remedy shall be the replacement of the\par
+media.  This offer is void if the media defect results from accident,\par
+abuse, or misapplication.\par
+\par
+7. LIMITATION OF LIABILITY: THE ABOVE REPLACEMENT PROVISION IS THE\par
+ONLY WARRANTY OF ANY KIND.  INTEL OFFERS NO OTHER WARRANTY EITHER\par
+EXPRESS OR IMPLIED INCLUDING THOSE OF MERCHANTABILITY, NONINFRINGEMENT\par
+OF THIRD- PARTY INTELLECTUAL PROPERTY OR FITNESS FOR A PARTICULAR\par
+PURPOSE. NEITHER INTEL NOR ITS SUPPLIERS SHALL BE LIABLE FOR ANY\par
+DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF\par
+BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION,\par
+OR OTHER LOSS) ARISING OUT OF THE USE OF OR INABILITY TO USE THE\par
+SOFTWARE, EVEN IF INTEL HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH\par
+DAMAGES.  BECAUSE SOME JURISDICTIONS PROHIBIT THE EXCLUSION OR\par
+LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, THE\par
+ABOVE LIMITATION MAY NOT APPLY TO YOU.\par
+\par
+8. UNAUTHORIZED USE:  THE MATERIALS ARE NOT DESIGNED, INTENDED, OR\par
+AUTHORIZED FOR USE IN ANY TYPE OF SYSTEM OR APPLICATION IN WHICH THE\par
+FAILURE OF THE MATERIALS COULD CREATE A SITUATION WHERE PERSONAL\par
+INJURY OR DEATH MAY OCCUR (E.G MEDICAL SYSTEMS, LIFE SUSTAINING OR\par
+LIFE SAVING SYSTEMS).  Should the buyer purchase or use the Materials\par
+for any such unintended or unauthorized use, the buyer shall indemnify\par
+and hold Intel and its officers, subsidiaries and affiliates harmless\par
+against all claims, costs, damages, and expenses, and reasonable\par
+attorney fees arising out of, directly or indirectly, any claim of\par
+product liability, personal injury or death associated with such\par
+unintended or unauthorized use, even if such claim alleges that Intel\par
+was negligent regarding the design or manufacture of the part.\par
+\par
+9. USER SUBMISSIONS:  You agree that any material, information or other\par
+communication, including all data, images, sounds, text, and other\par
+things embodied therein, you transmit or post to an Intel website or\par
+provide to Intel under this Agreement will be considered\par
+non-confidential ("Communications"). Intel will have no\par
+confidentiality obligations with respect to the Communications.  You\par
+agree that Intel and its designees will be free to copy, modify,\par
+create derivative works, publicly display, disclose, distribute,\par
+license and sublicense through multiple tiers of distribution and\par
+licensees, incorporate and otherwise use the Communications, including\par
+derivative works thereto, for any and all commercial or non-commercial\par
+purposes.\par
+\par
+10. TERMINATION OF THIS LICENSE: The term of this Agreement will\par
+commence on the date this Agreement is accepted by You and will\par
+continue until terminated.  This Agreement will terminate without\par
+notice on the last day of the pre-release period, which is specified\par
+elsewhere in the Materials, or upon the commercial release of the\par
+Materials.  Intel may terminate this Agreement at any time, with or\par
+without cause, with written notice to you.  Upon termination, you will\par
+immediately destroy the Materials or return all copies of the\par
+Materials to Intel along with any copies you have made.\par
+\par
+11. U.S. GOVERNMENT RESTRICTED RIGHTS: The Materials are provided with\par
+"RESTRICTED RIGHTS".  Use, duplication or disclosure by the Government\par
+is subject to restrictions set forth in FAR52.227-14 and\par
+DFAR252.227-7013 et seq. or its successor.  Use of the Materials by\par
+the Government constitutes acknowledgment of Intel's rights in them.\par
+\par
+12. EXPORT RESTRICTED RIGHTS: This software is subject to the U.S.\par
+Export Administration Regulations and other U.S. law, and may not be\par
+exported or re-exported to certain countries (Burma, Cuba, Iran, North\par
+Korea, Sudan, and Syria) or to persons or entities prohibited from\par
+receiving U.S. exports (including Denied Parties, Specially Designated\par
+Nationals, and entities on the Bureau of Export Administration Entity\par
+List or involved with missile technology or nuclear, chemical or\par
+biological weapons).\par
+\par
+13. APPLICABLE LAWS: Any claim arising under or relating to this\par
+Agreement shall be governed by the internal substantive laws of the\par
+State of Delaware or federal courts located in Delaware, without\par
+regard to principles of conflict of laws.  You may not export the\par
+Materials in violation of applicable export laws.\par
+\par
+* Other names and brands may be claimed as the property of others\par
+
+\pard\widctlpar\sa300\sl285\slmult0\qj\par
+\par
+\b\fs24 DRNG*\par
+
+\pard\nowidctlpar {\cf0\b0\fs20{\field{\*\fldinst{HYPERLINK https://software.intel.com/en-us/articles/the-drng-library-and-manual }}{\fldrslt{https://software.intel.com/en-us/articles/the-drng-library-and-manual\ul0\cf0}}}}\b0\f1\fs20\par
+\kerning0\par
+Intel Sample Source Code License\par
+\par
+This license governs use of the accompanying software. By installing or \par
+copying all or any part of the software components in this package, you \par
+(\ldblquote you\rdblquote  or \ldblquote Licensee\rdblquote ) agree to the terms of this agreement. Do \par
+not install or copy the software until you have carefully read and \par
+agreed to the following terms and conditions. If you do not agree to the \par
+terms of this agreement, promptly return the software to Intel \par
+Corporation (\ldblquote Intel\rdblquote ). \par
+\par
+1. Definitions: \par
+\par
+A. \ldblquote Materials" are defined as the software (including the \par
+Redistributables and Sample Source as defined herein), documentation, \par
+and other materials, including any updates and upgrade thereto, that are \par
+provided to you under this Agreement. \par
+\par
+B. "Redistributables" are the files listed in the "redist.txt" file that \par
+is included in the Materials or are otherwise clearly identified as \par
+redistributable files by Intel. \par
+\par
+C. \ldblquote Sample Source\rdblquote  is the source code file(s) that: (i) \par
+demonstrate(s) certain functions for particular purposes; (ii) are \par
+identified as sample source code; and (iii) are provided hereunder in \par
+source code form. \par
+\par
+D. \ldblquote Intel\rquote s Licensed Patent Claims\rdblquote  means those claims of \par
+Intel\rquote s patents that (a) are infringed by the Sample Source or \par
+Redistributables, alone and not in combination, in their unmodified \par
+form, as furnished by Intel to Licensee and (b) Intel has the right to \par
+license. \par
+\par
+2. License Grant: Subject to all of the terms and conditions of this \par
+Agreement: \par
+\par
+A. Intel grants to you a non-exclusive, non-assignable, copyright \par
+license to use the Material for your internal development purposes only. \par
+\par
+B. Intel grants to you a non-exclusive, non-assignable copyright license \par
+to reproduce the Sample Source, prepare derivative works of the Sample \par
+Source and distribute the Sample Source or any derivative works thereof \par
+that you create, as part of the product or application you develop using \par
+the Materials. \par
+\par
+C. Intel grants to you a non-exclusive, non-assignable copyright license \par
+to distribute the Redistributables, or any portions thereof, as part of \par
+the product or application you develop using the Materials. \par
+\par
+D. Intel grants Licensee a non-transferable, non-exclusive, worldwide, \par
+non-sublicenseable license under Intel\rquote s Licensed Patent Claims to \par
+make, use, sell, and import the Sample Source and the Redistributables. \par
+\par
+3. Conditions and Limitations: \par
+\par
+A. This license does not grant you any rights to use Intel\rquote s name, \par
+logo or trademarks. \par
+\par
+B. Title to the Materials and all copies thereof remain with Intel. The \par
+Materials are copyrighted and are protected by United States copyright \par
+laws. You will not remove any copyright notice from the Materials. You \par
+agree to prevent any unauthorized copying of the Materials. Except as \par
+expressly provided herein, Intel does not grant any express or implied \par
+right to you under Intel patents, copyrights, trademarks, or trade \par
+secret information. \par
+\par
+C. You may NOT: (i) use or copy the Materials except as provided in this \par
+Agreement; (ii) rent or lease the Materials to any third party; (iii) \par
+assign this Agreement or transfer the Materials without the express \par
+written consent of Intel; (iv) modify, adapt, or translate the Materials \par
+in whole or in part except as provided in this Agreement; (v) reverse \par
+engineer, decompile, or disassemble the Materials not provided to you in \par
+source code form; or (vii) distribute, sublicense or transfer the source \par
+code form of any components of the Materials and derivatives thereof to \par
+any third party except as provided in this Agreement. \par
+\par
+D. Platform Limitation - The licenses granted in section 2 extend only \par
+to the software or derivative works that you create that run directly on \par
+a Microsoft Windows operating system product, Microsoft run-time \par
+technology (such as the .NET Framework or Silverlight), or Microsoft \par
+application platform (such as Microsoft Office or Microsoft Dynamics). \par
+\par
+4. No Warranty: \par
+\par
+THE MATERIALS ARE PROVIDED \ldblquote AS IS\rdblquote . INTEL DISCLAIMS ALL EXPRESS OR \par
+IMPLIED WARRANTIES WITH RESPECT TO THEM, INCLUDING ANY IMPLIED \par
+WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT, AND FITNESS FOR ANY \par
+PARTICULAR PURPOSE. \par
+\par
+5. LIMITATION OF LIABILITY: NEITHER INTEL NOR ITS SUPPLIERS SHALL BE \par
+LIABLE FOR ANY DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, \par
+DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF \par
+BUSINESS INFORMATION, OR OTHER LOSS) ARISING OUT OF THE USE OF OR \par
+INABILITY TO USE THE SOFTWARE, EVEN IF INTEL HAS BEEN ADVISED OF THE \par
+POSSIBILITY OF SUCH DAMAGES. BECAUSE SOME JURISDICTIONS PROHIBIT THE \par
+EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL \par
+DAMAGES, THE ABOVE LIMITATION MAY NOT APPLY TO YOU. \par
+\par
+6. USER SUBMISSIONS: You agree that any material, information or other \par
+communication, including all data, images, sounds, text, and other \par
+things embodied therein, you transmit or post to an Intel website or \par
+provide to Intel under this Agreement will be considered \par
+non-confidential ("Communications"). Intel will have no confidentiality \par
+obligations with respect to the Communications. You agree that Intel and \par
+its designees will be free to copy, modify, create derivative works, \par
+publicly display, disclose, distribute, license and sublicense through \par
+multiple tiers of distribution and licensees, incorporate and otherwise \par
+use the Communications, including derivative works thereto, for any and \par
+all commercial or non-commercial purposes \par
+\par
+7. TERMINATION OF THIS LICENSE: This Agreement becomes effective on the \par
+date you accept this Agreement and will continue until terminated as \par
+provided for in this Agreement. Intel may terminate this license at any \par
+time if you are in breach of any of its terms and conditions. Upon \par
+termination, you will immediately return to Intel or destroy the \par
+Materials and all copies thereof. \par
+\par
+8. U.S. GOVERNMENT RESTRICTED RIGHTS: The Materials are provided with \par
+"RESTRICTED RIGHTS". Use, duplication or disclosure by the Government is \par
+subject to restrictions set forth in FAR52.227-14 and DFAR252.227-7013 \par
+et seq. or its successor. Use of the Materials by the Government \par
+constitutes acknowledgment of Intel's rights in them. \par
+\par
+9. APPLICABLE LAWS: Any claim arising under or relating to this \par
+Agreement shall be governed by the internal substantive laws of the \par
+State of Delaware, without regard to principles of conflict of laws. You \par
+may not export the Materials in violation of applicable export laws. \par
+\par
+\par
+\par
+\par
+
+\pard\widctlpar\sa200\sl276\slmult1\cf0\lang9\par
+\par
+\par
+\par
+\par
+\par
+\par
+
+\pard\nowidctlpar\cf2\b\fs24\lang1033 LLVM*\par
+\b0\fs20\par
+{\cf0{\field{\*\fldinst{HYPERLINK http://llvm.org/ }}{\fldrslt{http://llvm.org/\ul0\cf0}}}}\f1\fs20\par
+\par
+
+\pard\widctlpar\tx916\tx1832\tx2748\tx3664\tx4580\tx5496\tx6412\tx7328\tx8244\tx9160\tx10076\tx10992\tx11908\tx12824\tx13740\tx14656\cf1\f2 ==============================================================================\par
+LLVM Release License\par
+==============================================================================\par
+University of Illinois/NCSA\par
+Open Source License\par
+\par
+Copyright (c) 2003-2016 University of Illinois at Urbana-Champaign.\par
+All rights reserved.\par
+\par
+Developed by:\par
+\par
+    LLVM Team\par
+\par
+    University of Illinois at Urbana-Champaign\par
+\par
+    {{\field{\*\fldinst{HYPERLINK http://llvm.org }}{\fldrslt{http://llvm.org\ul0\cf0}}}}\f2\fs20\par
+\par
+Permission is hereby granted, free of charge, to any person obtaining a copy of\par
+this software and associated documentation files (the "Software"), to deal with\par
+the Software without restriction, including without limitation the rights to\par
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies\par
+of the Software, and to permit persons to whom the Software is furnished to do\par
+so, subject to the following conditions:\par
+\par
+    * Redistributions of source code must retain the above copyright notice,\par
+      this list of conditions and the following disclaimers.\par
+\par
+    * Redistributions in binary form must reproduce the above copyright notice,\par
+      this list of conditions and the following disclaimers in the\par
+      documentation and/or other materials provided with the distribution.\par
+\par
+    * Neither the names of the LLVM Team, University of Illinois at\par
+      Urbana-Champaign, nor the names of its contributors may be used to\par
+      endorse or promote products derived from this Software without specific\par
+      prior written permission.\par
+\par
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\par
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\par
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE\par
+CONTRIBUTORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\par
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\par
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE\par
+SOFTWARE.\par
+\par
+==============================================================================\par
+Copyrights and Licenses for Third Party Software Distributed with LLVM:\par
+==============================================================================\par
+The LLVM software contains code written by third parties.  Such software will\par
+have its own individual LICENSE.TXT file in the directory in which it appears.\par
+This file will describe the copyrights, license, and restrictions which apply\par
+to that code.\par
+\par
+The disclaimer of warranty in the University of Illinois Open Source License\par
+applies to all code in the LLVM Distribution, and nothing in any of the\par
+other licenses gives permission to use the names of the LLVM Team or the\par
+University of Illinois to endorse or promote products derived from this\par
+Software.\par
+\par
+The following pieces of software have additional or alternate copyrights,\par
+licenses, and/or restrictions:\par
+\par
+Program             Directory\par
+-------             ---------\par
+Autoconf            llvm/autoconf\par
+                    llvm/projects/ModuleMaker/autoconf\par
+Google Test         llvm/utils/unittest/googletest\par
+OpenBSD regex       llvm/lib/Support/\{reg*, COPYRIGHT.regex\}\par
+pyyaml tests        llvm/test/YAMLParser/\{*.data, LICENSE.TXT\}\par
+ARM contributions   llvm/lib/Target/ARM/LICENSE.TXT\par
+md5 contributions   llvm/lib/Support/MD5.cpp llvm/include/llvm/Support/MD5.h\par
+
+\pard\nowidctlpar\cf2\f1\par
+\par
+\par
+\par
+\par
+\par
+\b\fs24 ITTNotify*\par
+\par
+\b0\fs22 Dual BSD/GPLv2 license\par
+\par
+  GPL LICENSE SUMMARY\par
+\par
+  Copyright (c) 2005-2014 Intel Corporation. All rights reserved.\par
+\par
+  This program is free software; you can redistribute it and/or modify\par
+  it under the terms of version 2 of the GNU General Public License as\par
+  published by the Free Software Foundation.\par
+\par
+  This program is distributed in the hope that it will be useful, but\par
+  WITHOUT ANY WARRANTY; without even the implied warranty of\par
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\par
+  General Public License for more details.\par
+\par
+  You should have received a copy of the GNU General Public License\par
+  along with this program; if not, write to the Free Software\par
+  Foundation, Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.\par
+  The full GNU General Public License is included in this distribution\par
+  in the file called LICENSE.GPL.\par
+\par
+  Contact Information:\par
+  {{\field{\*\fldinst{HYPERLINK http://software.intel.com/en-us/articles/intel-vtune-amplifier-xe/ }}{\fldrslt{http://software.intel.com/en-us/articles/intel-vtune-amplifier-xe/\ul0\cf0}}}}\f1\fs22\par
+\par
+  BSD LICENSE\par
+\par
+  Copyright (c) 2005-2014 Intel Corporation. All rights reserved.\par
+  All rights reserved.\par
+\par
+  Redistribution and use in source and binary forms, with or without\par
+  modification, are permitted provided that the following conditions\par
+  are met:\par
+\par
+    * Redistributions of source code must retain the above copyright\par
+      notice, this list of conditions and the following disclaimer.\par
+    * Redistributions in binary form must reproduce the above copyright\par
+      notice, this list of conditions and the following disclaimer in\par
+      the documentation and/or other materials provided with the\par
+      distribution.\par
+    * Neither the name of Intel Corporation nor the names of its\par
+      contributors may be used to endorse or promote products derived\par
+      from this software without specific prior written permission.\par
+\par
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\par
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\par
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\par
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT\par
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\par
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\par
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\par
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\par
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\par
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\par
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\par
+\fs20\par
+\par
+\par
+\par
+\b\fs24 WiX Toolset*\par
+\b0\fs20\par
+{\cf0{\field{\*\fldinst{HYPERLINK http://wixtoolset.org/ }}{\fldrslt{http://wixtoolset.org/\ul0\cf0}}}}\f1\fs20\par
+\par
+
+\pard\cbpat6\nowidctlpar\s2\sa300\sl570\slmult0\cf4\f3 WiX Toolset License\par
+
+\pard\cbpat6\widctlpar\sa300 The WiX toolset is released under the Microsoft Reciprocal License (MS-RL). A reciprocal license is used to ensure that others who build on the effort of the WiX community give back to the WiX community. Specifically the license requires that fixes and improvements to the WiX toolset must be published using the same license.\par
+Sometimes the reciprocal license is incorrectly interpreted to also apply to bundles, packages, and custom actions built using the WiX toolset. The Outercurve Foundation has previously provided this statement below to clarify which now the .NET Foundation reaffirms:\par
+
+\pard\cbpat6\widctlpar The WiX toolset (WiX) is licensed under the Microsoft Reciprocal License (MS-RL). The MS-RL governs the distribution of the software licensed under it, as well as derivative works, and incorporates the definition of a derivative work provided in U.S. copyright law. OuterCurve Foundation (and the .NET Foundation) does not view the installer packages generated by WiX as falling within the definition of a derivative work, merely because they are produced using WiX. Thus, the installer packages generated by WiX will normally fall outside the scope of the MS-RL, and any of your source code, binaries, libraries, routines or other software components that are incorporated in installer packages generated by WiX can be governed by other licensing terms.\par
+
+\pard\cbpat6\widctlpar\sa300 The full text of the MS-RL license is reproduced below. It can also be found in the LICENSE.TXT file included with the source code.\par
+
+\pard\cbpat6\nowidctlpar\s3\sa300\sl480\slmult0 Microsoft Reciprocal License (MS-RL)\par
+
+\pard\cbpat6\widctlpar\sa300 This license governs use of the accompanying software. If you use the software, you accept this license. If you do not accept the license, do not use the software.\par
+
+\pard\cbpat6 
+{\pntext\f3 1.\tab}{\*\pn\pnlvlbody\pnf3\pnindent360\pnstart1\pndec{\pntxta.}}
+\widctlpar\fi-360\li720\sa300\sl390\slmult0 Definitions\par
+
+\pard\cbpat6\widctlpar\li720\sa300\sl390\slmult0 The terms "reproduce," "reproduction," "derivative works," and "distribution" have the same meaning here as under U.S. copyright law.\par
+A "contribution" is the original software, or any additions or changes to the software.\par
+A "contributor" is any person that distributes its contribution under this license.\par
+"Licensed patents" are a contributor's patent claims that read directly on its contribution.\par
+
+\pard\cbpat6\widctlpar\fi-360\li720\sa300\sl390\slmult0 2.\tab Grant of Rights\par
+
+\pard\cbpat6\widctlpar\li720\sa300\sl390\slmult0 (A) Copyright Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free copyright license to reproduce its contribution, prepare derivative works of its contribution, and distribute its contribution or any derivative works that you create.\par
+(B) Patent Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free license under its licensed patents to make, have made, use, sell, offer for sale, import, and/or otherwise dispose of its contribution in the software or derivative works of the contribution in the software.\par
+
+\pard\cbpat6\widctlpar\fi-360\li720\sa300\sl390\slmult0 3.\tab Conditions and Limitations\par
+
+\pard\cbpat6\widctlpar\li720\sa300\sl390\slmult0 (A) Reciprocal Grants- For any file you distribute that contains code from the software (in source code or binary format), you must provide recipients the source code to that file along with a copy of this license, which license will govern that file. You may license other files that are entirely your own work and do not contain code from the software under any terms you choose.\par
+(B) No Trademark License- This license does not grant you rights to use any contributors' name, logo, or trademarks.\par
+(C) If you bring a patent claim against any contributor over patents that you claim are infringed by the software, your patent license from such contributor to the software ends automatically.\par
+(D) If you distribute any portion of the software, you must retain all copyright, patent, trademark, and attribution notices that are present in the software.\par
+(E) If you distribute any portion of the software in source code form, you may do so only under this license by including a complete copy of this license with your distribution. If you distribute any portion of the software in compiled or object code form, you may only do so under a license that complies with this license.\par
+(F) The software is licensed "as-is." You bear the risk of using it. The contributors give no express warranties, guarantees or conditions. You may have additional consumer rights under your local laws which this license cannot change. To the extent permitted under your local laws, the contributors exclude the implied warranties of merchantability, fitness for a particular purpose and non-infringement.\par
+
+\pard\nowidctlpar\cf2\f1\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+
+\pard\brdrb\brdrs\brdrw30\brsp20 \nowidctlpar\sa100\b\par
+
+\pard\nowidctlpar\sa100\par
+
+\pard\nowidctlpar\s1\cf0\b0\f0\fs24 Legal Information\par
+
+\pard\nowidctlpar\sa120\cf2\f1\fs20\par
+
+\pard\widctlpar\sb100\sa100\tx6804\cf5\f3\fs18 INFORMATION IN THIS DOCUMENT IS PROVIDED IN CONNECTION WITH INTEL PRODUCTS.\~ NO LICENSE, EXPRESS OR IMPLIED, BY ESTOPPEL OR OTHERWISE, TO ANY INTELLECTUAL PROPERTY RIGHTS IS GRANTED BY THIS DOCUMENT.\~ EXCEPT AS PROVIDED IN INTEL'S TERMS AND CONDITIONS OF SALE FOR SUCH PRODUCTS, INTEL ASSUMES NO LIABILITY WHATSOEVER AND INTEL DISCLAIMS ANY EXPRESS OR IMPLIED WARRANTY, RELATING TO SALE AND/OR USE OF INTEL PRODUCTS INCLUDING LIABILITY OR WARRANTIES RELATING TO FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR INFRINGEMENT OF ANY PATENT, COPYRIGHT OR OTHER INTELLECTUAL PROPERTY RIGHT. \line A "Mission Critical Application" is any application in which failure of the Intel Product could result, directly or indirectly, in personal injury or death.\~ SHOULD YOU PURCHASE OR USE INTEL'S PRODUCTS FOR ANY SUCH MISSION CRITICAL APPLICATION, YOU SHALL INDEMNIFY AND HOLD INTEL AND ITS SUBSIDIARIES, SUBCONTRACTORS AND AFFILIATES, AND THE DIRECTORS, OFFICERS, AND EMPLOYEES OF EACH, HARMLESS AGAINST ALL CLAIMS COSTS, DAMAGES, AND EXPENSES AND REASONABLE ATTORNEYS' FEES ARISING OUT OF, DIRECTLY OR INDIRECTLY, ANY CLAIM OF PRODUCT LIABILITY, PERSONAL INJURY, OR DEATH ARISING IN ANY WAY OUT OF SUCH MISSION CRITICAL APPLICATION, WHETHER OR NOT INTEL OR ITS SUBCONTRACTOR WAS NEGLIGENT IN THE DESIGN, MANUFACTURE, OR WARNING OF THE INTEL PRODUCT OR ANY OF ITS PARTS. \line Intel may make changes to specifications and product descriptions at any time, without notice.\~ Designers must not rely on the absence or characteristics of any features or instructions marked "reserved" or "undefined".\~ Intel reserves these for future definition and shall have no responsibility whatsoever for conflicts or incompatibilities arising from future changes to them.\~ The information here is subject to change without notice.\~ Do not finalize a design with this information.\line The products described in this document may contain design defects or errors known as errata which may cause the product to deviate from published specifications.\~ Current characterized errata are available on request.\line Contact your local Intel sales office or your distributor to obtain the latest specifications and before placing your product order.\line Copies of documents which have an order number and are referenced in this document, or other Intel literature, may be obtained by calling 1-800-548-4725, or go to:\~ {{\field{\*\fldinst{HYPERLINK http://www.intel.com/design/literature.htm }}{\fldrslt{http://www.intel.com/design/literature.htm\ul0\cf0}}}}\f3\fs18  \par
+
+\pard\nowidctlpar\cf0\fs24 Code names featured are used internally within Intel to identify products that are in development and not yet publicly announced for release.\~ Customers, licensees and other third parties are not authorized by Intel to use code names in advertising, promotion or marketing of any product or services and any such use of Intel's internal code names is at the sole risk of the user \par
+
+\pard\widctlpar\sb100\sa100\tx6804\cf1\fs18 No technology can provide absolute security under all conditions. Use of the technology described in this document may require you to purchase other software and hardware in order for the technology to function as described herein. \par
+Software and workloads used in performance tests may have been optimized for performance only on Intel microprocessors. Performance tests, such as SYSmark and MobileMark, are measured using specific computer systems, components, software, operations and functions. Any change to any of those factors may cause the results to vary. You should consult other information and performance tests to assist you in fully evaluating your contemplated purchases, including the performance of that product when combined with other products.\line\cf5\line This document contains information on products in the design phase of development. \line\line Intel\'ae Parallel Studio XE, Intel\'ae Enhanced Privacy IDs, Intel\'ae Advanced Vector Extensions, and Intel\'ae Advanced Vector Extensions 2 are trademarks of Intel Corporation in the U.S. and/or other countries. \line\line * Other names and brands may be claimed as the property of others. \line\line Copyright (C) 2010\endash 2013, Intel Corporation.\par
+
+\pard\nowidctlpar\cf2\f1\fs20\par
+\par
+\par
+
+\pard\nowidctlpar\sa100\qr\par
+\par
+\trowd\trgaph10\trleft-30\trrh98\trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clcbpat1\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx9190 
+\pard\intbl\nowidctlpar\cf0\b\f0\fs18 Optimization Notice\b0\cell\row\trowd\trgaph10\trleft-30\trrh640\trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clcbpat8\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx9190 
+\pard\intbl\nowidctlpar Intel\rquote s compilers may or may not optimize to the same degree for non-Intel microprocessors for optimizations that are not unique to Intel microprocessors. These optimizations include SSE2, SSE3, and SSSE3 instruction sets and other optimizations. Intel does not guarantee the availability, functionality, or effectiveness of any optimization on microprocessors not manufactured by Intel. Microprocessor-dependent optimizations in this product are intended for use with Intel microprocessors. Certain optimizations not specific to Intel microarchitecture are reserved for Intel microprocessors. Please refer to the applicable product User and Reference Guides for more information regarding the specific instruction sets covered by this notice.\par
+
+\pard\intbl\nowidctlpar\qr\par
+Notice revision #20110804\fs24\cell\row 
+\pard\nowidctlpar\sa100\qr\cf2\b\f1\fs20\par
+}
+ 

@@ -1,0 +1,3 @@
+[report]
+# Don't test the command line app at this time
+omit = rtfsig/app.py
