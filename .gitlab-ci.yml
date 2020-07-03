@@ -7,15 +7,25 @@ include:
   - template: License-Scanning.gitlab-ci.yml
 
 stages:
-  - build
   - test
-  - release
+  - deploy
 
-build:
+test:
   image: python:3.8-buster
   services:
     - docker:dind
-  stage: build
+  stage: test
+  script:
+    - pip install tox
+    - tox
+
+# A more complicated CI/CD pipeline would build, then test, then deploy. For simplicity,
+# this configuration runs the stages separately with no shared artefacts.
+deploy:
+  image: python:3.8-buster
+  services:
+    - docker:dind
+  stage: deploy
   script:
     - rm -rf dist
     - pip install twine wheel
@@ -28,12 +38,3 @@ build:
   only:
     - tags
     - /^v\d+\.\d+\.\d+$$/
-
-test:
-  image: python:3.8-buster
-  services:
-    - docker:dind
-  stage: test
-  script:
-    - pip install tox
-    - tox
