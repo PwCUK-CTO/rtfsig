@@ -12,7 +12,7 @@ stages:
   - release
 
 build:
-  image: python:3.6.5-stretch
+  image: python:3.8-buster
   services:
     - docker:dind
   stage: build
@@ -30,7 +30,7 @@ build:
     - /^v\d+\.\d+\.\d+$$/
 
 test:
-  image: python:3.6.5-stretch
+  image: python:3.8-buster
   services:
     - docker:dind
   stage: test
