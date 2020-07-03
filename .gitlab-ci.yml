@@ -30,6 +30,9 @@ build:
     - /^v\d+\.\d+\.\d+$$/
 
 test:
+  image: python:3.6.5-stretch
+  services:
+    - docker:dind
   stage: test
   script:
     - pip install tox
