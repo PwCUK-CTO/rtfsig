@@ -18,6 +18,9 @@ test:
   script:
     - pip install tox
     - tox
+  artifacts:
+    reports:
+      junit: junit-*.xml
 
 # A more complicated CI/CD pipeline would build, then test, then deploy. For simplicity,
 # this configuration runs the stages separately with no shared artefacts.
