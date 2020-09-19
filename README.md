@@ -109,4 +109,4 @@ This is as simple as running tox and checking the output:
 * v0.0.1 (18th October 2019) - Initial version, supports RSID control words and generating Yara rules
 * v0.0.2 (23rd October 2019) - Second beta, added support for unique image identifiers and document information
 * v0.0.3 (23rd October 2019) - Third beta, added support for picture sizes
-* v0.1.0 (xxxx xxxx 2020) - First public release, packaged as a Python module for PyPI
+* v0.1.0 (19th September 2020) - First public release, packaged as a Python module for PyPI
