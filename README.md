@@ -1,6 +1,3 @@
-![pipeline status][img_pipeline_status]
-![test coverage][img_test_coverage]
-
 # Introduction
 
 This tool is designed to make it easy to signature potentially unique parts of RTF files.
@@ -113,6 +110,3 @@ This is as simple as running tox and checking the output:
 * v0.0.2 (23rd October 2019) - Second beta, added support for unique image identifiers and document information
 * v0.0.3 (23rd October 2019) - Third beta, added support for picture sizes
 * v0.1.0 (19th September 2020) - First public release, packaged as a Python module for PyPI
-
-[img_pipeline_status]: https://gitlab.com/cto-uk/python-modules/rtfsig/badges/master/pipeline.svg
-[img_test_coverage]: https://gitlab.com/cto-uk/python-modules/rtfsig/badges/master/coverage.svg
