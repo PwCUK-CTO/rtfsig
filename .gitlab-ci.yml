@@ -33,9 +33,8 @@ deploy:
     - rm -rf dist
     - pip install twine wheel
     - python3 setup.py sdist bdist_wheel
-    - sed -i "s|%USERNAME%|${PYPI_USERNAME}|" .pypirc
     - sed -i "s|%TOKEN%|${PYPI_TOKEN}|" .pypirc
-    - python3 -m twine upload --config-file .pypirc --repository gitlab dist/*
+    - python3 -m twine upload --config-file .pypirc --repository pypi dist/*
 
   # Ensure we only push when a new version is tagged
   only:

@@ -14,7 +14,6 @@ setuptools.setup(
     author="David Cannings",
     author_email="david@edeca.net",
     description="Extract potentially unique strings from RTF files for threat hunting",
-    license="TBD",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/PwCUK-CTO/rtfsig",
@@ -28,7 +27,7 @@ setuptools.setup(
         "Development Status :: 4 - Beta",
         "Topic :: Security",
     ],
-    install_requires=["Jinja2",],
+    install_requires=["Jinja2==2.11.2",],
     extras_require={
         "docs": docs_require,
         "tests": tests_require,
