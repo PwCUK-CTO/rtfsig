@@ -1,6 +1,7 @@
 """
 Utility module that uses Jinja2 to generate Yara rules from a basic template.
 """
+
 from jinja2 import Template
 from . import VERSION_STRING
 

@@ -10,6 +10,7 @@ Future versions should also investigate:
  * password (weak / deprecated version of passwordhash)
  * revtbl (older version of rsidtbl)
 """
+
 import logging
 import re
 import string
@@ -33,7 +34,8 @@ class ParsingException(Exception):
     """
 
 
-class RtfAnalyser:
+# TODO: Disabling pylint warning below is a hack, make a better API
+class RtfAnalyser:  # pylint: disable=too-few-public-methods
     """
     The core class responsible for parsing RTF documents. A new object should be created for each
     file to be analysed.
@@ -84,7 +86,7 @@ class RtfAnalyser:
         Args:
             data: the raw RTF document contents
         """
-        if any([chr(x) not in string.printable for x in data]):
+        if any(chr(x) not in string.printable for x in data):
             self._add_observation("OBS001")
 
         self._data = data.decode("ascii", "ignore")
@@ -95,8 +97,8 @@ class RtfAnalyser:
             )
 
         if self._data[4:6] != "f1":
-            # Check for any deviation from \rtf1, often used by malicious documents to evade really old
-            # (or really terrible) security products.
+            # Check for any deviation from \rtf1, often used by malicious documents
+            # to evade really old (or really terrible) security products.
             self._add_observation("OBS002")
 
         self._find_rsid_tags()
@@ -259,7 +261,7 @@ class RtfAnalyser:
             "tblrsid",
         ]
         for marker in change_markers:
-            for match in re.finditer(r"\\({})(\d+)".format(marker), self._data):
+            for match in re.finditer(rf"\\({marker})(\d+)", self._data):
                 control_word = match.group(1)
                 unique_id = match.group(2)
 
@@ -269,7 +271,10 @@ class RtfAnalyser:
                 if unique_id not in revisions:
                     self._add_observation("OBS003")
                     logging.debug(
-                        "Found change ID %s (control word %s) that is not in the RSID table.  Potential bug or modified document",
+                        (
+                            "Found change ID %s (control word %s) that is not in the RSID table."
+                            "Potential bug or modified document"
+                        ),
                         unique_id,
                         control_word,
                     )

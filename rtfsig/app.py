@@ -4,6 +4,9 @@ This module is an example implementation of a console program which uses the cor
 It can be used standalone (the shell command 'rtfsig' is aliased to this script during
 setup) or to demonstrate how to integrate rtfsig into another tool.
 """
+
+# pylint: disable=too-few-public-methods
+
 import argparse
 import logging
 import sys
@@ -44,7 +47,10 @@ def main() -> NoReturn:
         rules.append(
             generate_yara_rule(
                 "loose_rule",
-                "RTF file matching known unique identifiers (higher chance of FP, adjust 'any of them' if required)",
+                (
+                    "RTF file matching known unique identifiers (higher chance of FP, "
+                    "adjust 'any of them' if required)"
+                ),
                 parser.results["loose_strings"],
             )
         )
@@ -71,7 +77,10 @@ def main() -> NoReturn:
 
     else:
         logging.info(
-            "Did not find anything unique to signature, check the document for unique parts which have been missed"
+            (
+                "Did not find anything unique to signature, check the document "
+                "for unique parts which have been missed"
+            )
         )
 
 
@@ -83,7 +92,7 @@ def _save_yara_rules(filename: str, rules: str) -> NoReturn:
         filename: the file to save rule data to
         rules: raw Yara rule data
     """
-    with open(filename, "w") as fh:
+    with open(filename, "w", encoding="utf-8") as fh:
         fh.write("".join(rules))
 
 
@@ -105,7 +114,7 @@ def _get_arguments() -> argparse.Namespace:
 
     description = (
         "Examine RTF documents for artefacts that can be used to hunt similar files.\n\n"
-        "This is rtfsig version {}, by David Cannings (@edeca).".format(VERSION_STRING)
+        f"This is rtfsig version {VERSION_STRING}, by David Cannings (@edeca)."
     )
 
     parser = argparse.ArgumentParser(description=description)
