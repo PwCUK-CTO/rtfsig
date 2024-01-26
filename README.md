@@ -104,6 +104,15 @@ This is as simple as running tox and checking the output:
     py37: commands succeeded
     congratulations :)
 
+Packaging:
+
+    $ python setup.py sdist bdist_wheel 
+
+Check and upload to PyPI, signing with GPG:
+
+    $ twine check dist/*
+    $ twine upload dist/* --sign --identity FCEC8AAA140C74C826592AC357974C5B48A00D9B
+
 # Version history
 
 * v0.0.1 (18th October 2019) - Initial version, supports RSID control words and generating Yara rules

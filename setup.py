@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 docs_require = []
 tests_require = ["pylint", "pytest", "pytest-cov", "plyara"]
-dev_require = ["black", "tox"]
+dev_require = ["black", "tox", "twine", "wheel"]
 
 setuptools.setup(
     name="rtfsig",
