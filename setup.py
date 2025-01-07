@@ -27,7 +27,7 @@ setuptools.setup(
         "Development Status :: 4 - Beta",
         "Topic :: Security",
     ],
-    install_requires=["Jinja2==3.1.3",],
+    install_requires=["Jinja2==3.1.5",],
     extras_require={
         "docs": docs_require,
         "tests": tests_require,
