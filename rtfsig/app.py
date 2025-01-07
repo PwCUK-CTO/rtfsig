@@ -10,13 +10,12 @@ setup) or to demonstrate how to integrate rtfsig into another tool.
 import argparse
 import logging
 import sys
-from typing import NoReturn
 from . import VERSION_STRING
 from .core import RtfAnalyser, OBSERVATIONS
 from .yara import generate_yara_rule
 
 
-def main() -> NoReturn:
+def main() -> None:
     """
     Main method that obtains user arguments, sets up logging and calls the parser.
     """
@@ -84,7 +83,7 @@ def main() -> NoReturn:
         )
 
 
-def _save_yara_rules(filename: str, rules: str) -> NoReturn:
+def _save_yara_rules(filename: str, rules: str) -> None:
     """
     Utility function to
 
@@ -96,7 +95,7 @@ def _save_yara_rules(filename: str, rules: str) -> NoReturn:
         fh.write("".join(rules))
 
 
-def _configure_logging() -> NoReturn:
+def _configure_logging() -> None:
     """
     Set up logging with a basic level of INFO.
     """

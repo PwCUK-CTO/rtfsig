@@ -14,7 +14,6 @@ Future versions should also investigate:
 import logging
 import re
 import string
-from typing import NoReturn
 
 
 OBSERVATIONS = {
@@ -62,7 +61,7 @@ class RtfAnalyser:  # pylint: disable=too-few-public-methods
 
             self._parse_data(data)
 
-    def _parse_file(self, filename: str) -> NoReturn:
+    def _parse_file(self, filename: str) -> None:
         """
         Internal function. Parse a single RTF document, validating it first and then extracting
         useful features.
@@ -79,7 +78,7 @@ class RtfAnalyser:  # pylint: disable=too-few-public-methods
 
         self._parse_data(data)
 
-    def _parse_data(self, data: bytearray) -> NoReturn:
+    def _parse_data(self, data: bytearray) -> None:
         """
         Internal function. Parse a single RTF document from a bytearray.
 
@@ -107,7 +106,7 @@ class RtfAnalyser:  # pylint: disable=too-few-public-methods
         if self._risky_items:
             self._find_information_group()
 
-    def _add_observation(self, reference: str) -> NoReturn:
+    def _add_observation(self, reference: str) -> None:
         """
         Add an observation about the current RTF document to the findings.
 
