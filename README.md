@@ -122,3 +122,4 @@ Check and upload to PyPI, signing with GPG:
 * v0.1.1 (26th January 2024) - Bumped Jinja2 dependency to a current version
 * v0.1.2 (7th January 2025) - Bumped Jinja2 dependency to a current version
 * v0.1.3 (7th January 2025) - Tests fixed and integrated with GitHub actions
+* v0.1.4 (5th January 2026) - Bumped Jinja2 dependency to a current version
